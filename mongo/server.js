@@ -43,16 +43,6 @@ function tableToCollection(mysqlConnection, tableName, mongoCollection, callback
    });
 }
 
-MongoClient.connect("mongodb://localhost:27017/test", function (error, db) {
-   if (error) throw error;
-
-   var MysqlCon = mysql.createConnection({
-       host: 'localhost',
-       user: 'root',
-       password: 'password',
-       port: 3306,
-       database: 'prod_ccr'
-   });
 
    MysqlCon.connect();
 
