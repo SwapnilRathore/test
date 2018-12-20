@@ -1,5 +1,4 @@
-var mysql = require('mysql');
-var MongoClient = require('mongodb').MongoClient;
+
 
 function getMysqlTables(mysqlConnection, callback) {
    mysqlConnection.query("show full tables where Table_Type = 'BASE TABLE';", function(error, results, fields) {
